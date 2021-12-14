@@ -5,9 +5,12 @@ import java.util.TreeSet;
 import it.unibo.oop.lab05.ex3.Product;
 import it.unibo.oop.lab05.ex3.WarehouseImpl;
 
-public class OrderedWarehouse extends WarehouseImpl{
-	
+public class OrderedWarehouse extends WarehouseImpl {
+
+	/**
+	 * Returns the products lexicographically ordered.
+	 */
 	public Set<Product> allProducts() {
-        return new TreeSet<>(super.allProducts());
-    }
+		return new TreeSet<>(super.allProducts());
+	}
 }
